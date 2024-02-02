@@ -13,6 +13,7 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
+    "htmx.org": "^1.9.10",
     "three": "^0.160.0"
   }
 }
