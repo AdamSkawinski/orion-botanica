@@ -87,9 +87,51 @@ canvas {
 
 
 /* Footer styling */
-footer {
-  background-color: rgb(245, 242, 242);
-  color: #000000;
-  padding: 20px 0;
-  text-align: center;
+.site-footer {
+  background-color: #333; /* Dark background for contrast */
+  color: #fff; /* White text color for readability */
+  padding: 40px 20px; /* Ample padding for spacing */
+  font-size: 14px; /* Smaller font size for footer content */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Space out the footer sections */
+  flex-wrap: wrap; /* Wrap sections for responsiveness */
+}
+
+.footer-section h4 {
+  margin-top: 0;
+  color: #f4a261; /* Use the pastel orange for headings */
+}
+
+.footer-section ul, .footer-section p {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0 0 10px 0; /* Spacing between items */
+}
+
+.footer-section a {
+  color: #a8d5ba; /* Pastel green for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-section a:hover {
+  color: #76b947; /* Brighter green on hover for visibility */
+}
+
+.social-media-links {
+  display: flex;
+  gap: 10px; /* Space out social media links */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center; /* Center content on smaller screens */
+  }
+  .footer-section {
+      margin-bottom: 20px; /* Add space between sections on small screens */
+  }
 }
