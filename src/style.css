@@ -1,28 +1,95 @@
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0
+/* Base styles for body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-main{
-  position: absolute;
-  width: 100vw;
-  color: white;
-  z-index: 99;
+/* Header styles, including the navigation bar */
+header {
+  background-color: #ffffff; /* Clean, neutral background */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation links styling */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
   width: 100%;
-  margin: 0px auto;
-  padding: 120px 0px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  
+  max-width: 600px;
 }
 
-p{
-  font-family: elevon, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+.nav-links li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
-section{
-  grid-column: 3;
+/* Update hover color to green */
+.nav-links li a:hover {
+  color: #f2bd6d; /* Green color for hover */
+}
+
+/* Main content styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Tagline section styling */
+.tagline {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fafaf0;
+  color: #000;
+}
+
+.tagline h1 {
+  margin: 0 0 20px 0; /* Adjusts spacing below the header */
+  font-size: 4em; /* Updated size for "Orion Botanica" */
+}
+
+/* Button styling unchanged */
+.btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #000; /* Button background color remains black */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px; /* Increased to make buttons rounded */
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #76b947; /* Green color for hover */
+}
+
+
+
+/* Footer styling */
+footer {
+  background-color: rgb(245, 242, 242);
+  color: #000000;
+  padding: 20px 0;
+  text-align: center;
 }

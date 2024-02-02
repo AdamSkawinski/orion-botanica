@@ -1,8 +1,11 @@
 import './style.css'
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import 'htmx.org'
 
 const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xffffff); // Set the background color to white
+
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, .1, 1000); 
 
 /*
@@ -22,7 +25,7 @@ renderer.render(scene, camera);
     Geometry Set
 */
 const geometry = new THREE.TorusGeometry( 11,4,17,100 ); 
-const material = new THREE.MeshBasicMaterial( { color: 0x000080, wireframe:true } ); 
+const material = new THREE.MeshBasicMaterial( { color: 0x328751, wireframe:true } ); 
 const torus = new THREE.Mesh( geometry, material ); scene.add( torus );
 
 scene.add(torus);
@@ -48,6 +51,8 @@ scene.add(pointLight,ambientLight);
 // scene.add(lightHelper, gridHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false; // Disable zoom functionality
+
 
     /*
         Many Random Objects
