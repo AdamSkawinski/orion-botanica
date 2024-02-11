@@ -5,6 +5,12 @@ body, html {
   height: 100%;
 }
 
+canvas {
+  margin-top: 100px; /* Directly adds margin above the canvas */
+}
+
+
+
 /* Header styles, including the navigation bar */
 header {
   background-color: #ffffff; /* Clean, neutral background */
@@ -81,7 +87,7 @@ canvas {
 }
 
 .btn:hover {
-  background-color: #76b947; /* Green color for hover */
+  background-color: #328751; /* Green color for hover */
 }
 
 
@@ -112,13 +118,13 @@ canvas {
 }
 
 .footer-section a {
-  color: #a8d5ba; /* Pastel green for links */
+  color: #328751; /* Pastel green for links */
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .footer-section a:hover {
-  color: #76b947; /* Brighter green on hover for visibility */
+  color: #328751; /* Brighter green on hover for visibility */
 }
 
 .social-media-links {
