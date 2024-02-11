@@ -99,7 +99,6 @@ controls.rotateSpeed = 0.7;
 controls.panSpeed = 0.5;
 controls.zoomSpeed = 0.8;
 controls.enablePan = false; // Depending on your preference
-controls.maxPolarAngle = Math.PI / 2; // Prevent the camera from going below the "ground"
 controls.minDistance = 10; // Closer in
 controls.maxDistance = 100; // Further out
 
